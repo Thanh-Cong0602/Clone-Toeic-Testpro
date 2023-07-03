@@ -8,16 +8,16 @@ import './LoginPage.css'
 import { loginAPI } from '../../Api/Service/user.service'
 let isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
 function LoginPage() {
-   const [inputs, setInputs] = useState({
+   const [data, setData] = useState({
       username: '',
       password: ''
    })
-   const { username, password } = inputs;
+   const { username, password } = data;
    const dispatch = useDispatch()
    const navigate = useNavigate();
    function handleChange(e) {
       const { name, value } = e.target;
-      setInputs(inputs => ({ ...inputs, [name]: value }))
+      setData(data => ({ ...data, [name]: value }))
       // variable name have value as email or password, 
       // so if you get value of variable name, you must use [name of variable].
    }
@@ -29,10 +29,9 @@ function LoginPage() {
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
-         loginAPI('login', inputs).then((res) => {
-            const data = res.data
-            dispatch(userActions.login(data))
-            toast.success(data.message, { autoClose: 1000 })
+         loginAPI('accounts/login', data).then((res) => {
+            dispatch(userActions.login(res.data))
+            toast.success(res.data.message, { autoClose: 1000 })
             navigate('/')
          }).catch((error) => {
             toast.error(error, { autoClose: 1000 })
@@ -47,14 +46,14 @@ function LoginPage() {
    return (
       <div className='loginPage'>
          <form onSubmit={handleSubmit} className='loginForm' >
-            <div className='title'>ĐĂNG NHẬP</div>
+            <div className='title'>LOGIN</div>
             <div className='input-item'>
                <div className='icon'>
                   <Person size={30}></Person>
                </div>
                <div className='text'>
-                  <input type='text' placeholder='Nhập tài khoản'
-                     name='username' value={inputs.username} onChange={handleChange} />
+                  <input type='text' placeholder='Enter your account'
+                     name='username' value={data.username} onChange={handleChange} />
                </div>
             </div>
             <div className='input-item'>
@@ -62,12 +61,12 @@ function LoginPage() {
                   <Lock size={30}></Lock>
                </div>
                <div className='text'>
-                  <input type='password' placeholder='Nhập mật khẩu'
-                     name='password' value={inputs.password} onChange={handleChange} />
+                  <input type='password' placeholder='Enter your password'
+                     name='password' value={data.password} onChange={handleChange} />
                </div>
             </div>
             <div className='forgotPass'>
-               Quên mật khẩu
+               Forgot password
             </div>
             <div className='login-btn-wrapper'>
 
@@ -76,17 +75,17 @@ function LoginPage() {
             <div className='or-login-with'>
                <div className='line'></div>
                <div>
-                  <span>Hoặc đăng nhập với</span>
+                  <span>Or Login with</span>
                </div>
                <div className='line'></div>
             </div>
             <div className='login-with-gg'>
-               <span>Đăng nhập bằng google</span>
+               <span>Sgin in with google</span>
             </div>
             <div className='register'>
-               <p>Bạn chưa có tài khoản ?
+               <p>Do you have any accounts ?
                   <Link to={"/register"} className='no-underline'>
-                     <span> Đăng ký ngay</span>
+                     <span>Sign up</span>
                   </Link></p>
             </div>
          </form>
