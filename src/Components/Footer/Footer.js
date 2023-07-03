@@ -37,7 +37,7 @@ function Footer() {
             </div>
          </div>
          <div className='below-footer'>
-            
+
          </div>
       </div>
    )

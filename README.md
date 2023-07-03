@@ -7,7 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
-
+### variable name have value as email or password, 
+###   so if you get value of variable name, you 
+###    must use [name of variable].
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

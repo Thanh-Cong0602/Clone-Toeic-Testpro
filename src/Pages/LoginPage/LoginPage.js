@@ -5,8 +5,8 @@ import { Person, Lock } from 'react-bootstrap-icons';
 import { userActions } from '../../Redux/_actions';
 import { toast } from "react-toastify";
 import './LoginPage.css'
-import { loginAPI } from '../../Api/Service/user.service'
-let isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+import { loginAPI } from '../../Api/Service/auth.service'
+
 function LoginPage() {
    const [data, setData] = useState({
       username: '',
@@ -15,13 +15,13 @@ function LoginPage() {
    const { username, password } = data;
    const dispatch = useDispatch()
    const navigate = useNavigate();
+
    function handleChange(e) {
       const { name, value } = e.target;
       setData(data => ({ ...data, [name]: value }))
-      // variable name have value as email or password, 
-      // so if you get value of variable name, you must use [name of variable].
+
    }
-   
+
    function handleSubmit(e) {
       e.preventDefault()
       if (!username || !password) {
@@ -29,6 +29,7 @@ function LoginPage() {
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
+         console.log(data)
          loginAPI('accounts/login', data).then((res) => {
             dispatch(userActions.login(res.data))
             toast.success(res.data.message, { autoClose: 1000 })

@@ -1,21 +1,21 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { CaretDown } from 'react-bootstrap-icons'
+import { useSelector, useDispatch } from 'react-redux'
+import { userActions } from '../../Redux/_actions';
 import './Navbar.css'
-import { Link } from 'react-router-dom'
 import GetPro from '../../Assets/get-pro.png'
 import TCN from '../../Assets/tcn.jpg'
-import { CaretDown } from 'react-bootstrap-icons'
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
-import { userActions } from '../../Redux/_actions';
 
 function Navbar() {
    const newLocal = 'menu-dropdown'
    const dispatch = useDispatch()
+    const navigate = useNavigate()
    function handleLogout() {
          dispatch(userActions.logout());
+         navigate('/');
    }
    const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
-   console.log("My Hanh", isLoggedIn)
    return (
       <div className='navbar-header'>
          <div className='web-navbar css-responsive'>
