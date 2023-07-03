@@ -9,9 +9,10 @@ function RegisterPage() {
    const [user, setUser] = useState(
       {
          name: '',
-         email: '',
+         username: '',
          password: '',
-         confirmpassword: ''
+         confirmPassword: '',
+         role: 'admin'
       }
    );
    const dispatch = useDispatch();
@@ -23,17 +24,18 @@ function RegisterPage() {
 
    function handleSubmit(e) {
       e.preventDefault();
-      if (user.confirmpassword !== user.password) {
+      if (user.confirmPassword !== user.password) {
          const messageError = "Password doesn't match"
          toast.error(messageError, { autoClose: 1000 })
       }
-      else if (!user.name || !user.email || !user.password || !user.confirmpassword) {
+      else if (!user.username || !user.password || !user.confirmPassword) {
          const messageWarn = "You need to enter all the information!!!"
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
             registerAPI('register', user).then((res) => {
-            toast.success('Register successfully.', { autoClose: 1000 })
+            const data = res.data
+            toast.success(data.message, { autoClose: 1000 })
             navigate('/login')
          }).catch((error) => {
             toast.error(error, { autoClose: 1000 })
@@ -59,8 +61,8 @@ function RegisterPage() {
                   <Envelope size={25}></Envelope>
                </div>
                <div className='text'>
-                  <input type='email' placeholder='Email (Account)'
-                     name='email' value={user.email} onChange={handleChange} />
+                  <input type='text' placeholder='Email (Account)'
+                     name='username' value={user.username} onChange={handleChange} />
                </div>
             </div>
             <div className='input-item'>
@@ -78,7 +80,7 @@ function RegisterPage() {
                </div>
                <div className='text'>
                   <input type='password' placeholder='Enter your confirm password'
-                     name='confirmpassword' value={user.confirmpassword} onChange={handleChange} />
+                     name='confirmPassword' value={user.confirmPassword} onChange={handleChange} />
                </div>
             </div>
 

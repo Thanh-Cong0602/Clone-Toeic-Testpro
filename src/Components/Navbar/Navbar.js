@@ -15,7 +15,6 @@ function Navbar() {
          dispatch(userActions.logout());
    }
    const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
-   console.log("My Hanh", isLoggedIn)
    return (
       <div className='navbar-header'>
          <div className='web-navbar css-responsive'>
