@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Person, Lock, Envelope } from 'react-bootstrap-icons';
 import { toast } from "react-toastify"
 import { registerAPI } from '../../Api/Service/auth.service';
+import './RegisterPage.css'
 function RegisterPage() {
    const [user, setUser] = useState(
       {
@@ -31,7 +32,9 @@ function RegisterPage() {
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
-            registerAPI('register', user).then((res) => {
+         console.log(user)
+            registerAPI('accounts/register', user).then((res) => {
+               console.log(res)
             toast.success(res.data.message, { autoClose: 1000 })
             navigate('/login')
          }).catch((error) => {
