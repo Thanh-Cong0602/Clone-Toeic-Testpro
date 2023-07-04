@@ -4,7 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-
+readme.md
+index.js
+index.css
+App.test.js
+App.js
 # testing
 /coverage
 
