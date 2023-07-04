@@ -2,8 +2,4 @@ export const userConstants  = {
 
    REGISTER_SUCCESS: 'USERS_REGISTER_SUCCESS',
 
-   LOGIN_SUCCESS: 'USERS_LOGIN_SUCCESS',
-
-   LOGOUT: 'USERS_LOGOUT'
-
 };

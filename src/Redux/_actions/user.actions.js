@@ -5,5 +5,5 @@ export const userActions = {
 }
 
 function register(user) {
-   
+
 }
