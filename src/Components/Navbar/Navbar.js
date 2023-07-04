@@ -160,7 +160,7 @@ function Navbar() {
                   </div>
                   
                   <div className='menu-item-wrap'>
-                     <Link className="custom-link" to={'/'}>
+                     <Link className="custom-link" to={'/login'}>
                         <div className='menu-item-title'>
                            <span>Login</span>
                         </div>

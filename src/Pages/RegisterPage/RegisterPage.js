@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Person, Lock, Envelope } from 'react-bootstrap-icons';
-// import { userActions } from '../../Redux/_actions'
 import { toast } from "react-toastify"
 import { registerAPI } from '../../Api/Service/auth.service';
 function RegisterPage() {
@@ -15,7 +13,7 @@ function RegisterPage() {
          role: 'admin'
       }
    );
-   const dispatch = useDispatch();
+   // const dispatch = useDispatch();
    const navigate = useNavigate();
    function handleChange(e) {
       const { name, value } = e.target;
