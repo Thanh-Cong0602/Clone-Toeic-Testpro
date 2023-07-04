@@ -29,7 +29,6 @@ function LoginPage() {
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
-         console.log(data)
          loginAPI('accounts/login', data).then((res) => {
             dispatch(userActions.login(res.data))
             toast.success(res.data.message, { autoClose: 1000 })
