@@ -1,0 +1,109 @@
+.navbar-header {
+  height: 60px;
+  width: 100%;
+  background: #2E72B1;
+}
+.navbar-header .web-navbar {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar-header .web-navbar .main-menu {
+  height: 60px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.navbar-header .web-navbar .main-menu-wrap {
+  display: flex;
+  flex: 1;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: flex-start;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap {
+  color: #9bc9ff;
+  position: relative;
+  transition: transform 0.4s ease;
+  font-weight: 400;
+  padding: 16px 0;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-title {
+  color: #fff;
+  opacity: 0.5;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-title-img {
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-title-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-title:hover {
+  transform: translateY(-5px);
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-dropdown {
+  display: none;
+  text-align: left;
+  width: 320px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 2;
+  overflow: auto;
+  margin-top: 17px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-dropdown .menu-item-dropdown {
+  color: #212121;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 18px;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-dropdown .menu-item-dropdown:hover {
+  background: #f0f0f0;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .main-item {
+  font-weight: 700;
+  opacity: 1;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-img {
+  height: 26px;
+  width: auto;
+}
+.navbar-header .web-navbar .main-menu-wrap .menu-item-wrap .menu-item-img img {
+  height: 100%;
+}
+.navbar-header .web-navbar .main-menu-wrap .parent-menu:hover .menu-dropdown {
+  display: block;
+}
+
+.css-responsive {
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.btn-logout {
+  border: none;
+}/*# sourceMappingURL=Navbar.css.map */

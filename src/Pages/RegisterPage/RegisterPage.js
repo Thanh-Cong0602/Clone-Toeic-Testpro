@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Person, Lock, Envelope } from 'react-bootstrap-icons';
 // import { userActions } from '../../Redux/_actions'
 import { toast } from "react-toastify"
-import { registerAPI } from '../../Api/Service/user.service';
+import { registerAPI } from '../../Api/Service/auth.service';
 function RegisterPage() {
    const [user, setUser] = useState(
       {
@@ -25,17 +25,16 @@ function RegisterPage() {
    function handleSubmit(e) {
       e.preventDefault();
       if (user.confirmPassword !== user.password) {
-         const messageError = "Password doesn't match"
+         const messageError = "Password and Confirm password don't match"
          toast.error(messageError, { autoClose: 1000 })
       }
-      else if (!user.username || !user.password || !user.confirmPassword) {
+      else if (!user.name || !user.username || !user.password || !user.confirmPassword) {
          const messageWarn = "You need to enter all the information!!!"
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
             registerAPI('register', user).then((res) => {
-            const data = res.data
-            toast.success(data.message, { autoClose: 1000 })
+            toast.success(res.data.message, { autoClose: 1000 })
             navigate('/login')
          }).catch((error) => {
             toast.error(error, { autoClose: 1000 })
