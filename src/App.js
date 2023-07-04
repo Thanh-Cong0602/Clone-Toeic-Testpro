@@ -1,6 +1,6 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 
 import HomePage from './Pages/HomePage/HomePage';
 import Footer from './Components/Footer/Footer';
