@@ -36,7 +36,7 @@ function RegisterPage() {
             toast.success(res.data.message, { autoClose: 1000 })
             navigate('/login')
          }).catch((error) => {
-            toast.error(error, { autoClose: 1000 })
+            toast.error(error.response.data.message, { autoClose: 1000 })
          })
       }
    }
