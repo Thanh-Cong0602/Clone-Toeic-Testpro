@@ -20,9 +20,7 @@ function App() {
                <Route path="/" element={<HomePage />} />
             </Routes>
             <Routes >
-               {/* <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} />
-                */}
-               <Route path="/login" element={<LoginPage />} />
+               <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} />
             </Routes>
             <Footer />
          </BrowserRouter>
