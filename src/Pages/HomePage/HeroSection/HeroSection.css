@@ -1,0 +1,52 @@
+.heroSection {
+  background: linear-gradient(rgba(17, 17, 17, 0.1), rgba(17, 17, 17, 0.1)), url(../../../Assets/background-main.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  padding-bottom: 5rem;
+}
+.heroSection .information {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 150px 20px 0px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.heroSection .information .app-info-title .app-info-name {
+  color: #34447C;
+  font-weight: 700;
+  font-size: 80px;
+}
+.heroSection .information .app-info-title .app-info-name-posfix {
+  color: #34447C !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #34447C;
+  margin-left: 16px;
+  font-size: 80px;
+}
+.heroSection .information .app-info-subtitle {
+  color: #34447C !important;
+  font-size: 43px;
+}
+.heroSection .app-platform {
+  max-width: 1170px;
+  margin: 40px auto 0px;
+}
+.heroSection .app-platform .download-app {
+  display: flex;
+  gap: 16px;
+  padding: 30px;
+}
+.heroSection .app-platform .download-app .download-app-btn {
+  width: 200px;
+  height: 70px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: center;
+}/*# sourceMappingURL=HeroSection.css.map */
