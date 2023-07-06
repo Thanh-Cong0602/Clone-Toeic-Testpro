@@ -1,11 +1,21 @@
 import React from 'react'
-import './Navbar.css'
-import { Link } from 'react-router-dom'
-import GetPro from '../../Assets/get-pro.png'
+import { Link, useNavigate } from 'react-router-dom'
 import { CaretDown } from 'react-bootstrap-icons'
+import { useSelector, useDispatch } from 'react-redux'
+import { userActions } from '../../Redux/_actions';
+import './Navbar.css'
+import GetPro from '../../Assets/get-pro.png'
+import TCN from '../../Assets/tcn.jpg'
 
 function Navbar() {
    const newLocal = 'menu-dropdown'
+   const dispatch = useDispatch()
+    const navigate = useNavigate()
+   function handleLogout() {
+         dispatch(userActions.logout());
+         navigate('/');
+   }
+   const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
    return (
       <div className='navbar-header'>
          <div className='web-navbar css-responsive'>
@@ -150,7 +160,6 @@ function Navbar() {
                         </Link>
                      </div>
                   </div>
-                  
                   <div className='menu-item-wrap'>
                      <Link className="custom-link" to={'/'}>
                         <div className='menu-item-img'>
@@ -159,12 +168,38 @@ function Navbar() {
                      </Link>
                   </div>
                   
-                  <div className='menu-item-wrap'>
-                     <Link className="custom-link" to={'/login'}>
-                        <div className='menu-item-title'>
-                           <span>Login</span>
-                        </div>
-                     </Link>
+                  <div className='menu-item-wrap  parent-menu'>
+                     {!isLoggedIn ? (
+                        <Link className="custom-link" to={'/login'}>
+                           <div className='menu-item-title'>
+                              <span>Login</span>
+                           </div>
+                        </Link>
+                     ) : (
+                        <>
+                        <Link className="custom-link" to={'/'}>
+                           <div className='menu-item-title-img'>
+                              <img src={TCN}/>
+                           </div>
+                        </Link>
+                           <div className={newLocal}>
+      
+                              <Link to={'/'} className="custom-link">
+                                 <div className='menu-item-dropdown'>
+                                    View Profile
+                                 </div>
+                              </Link>
+                              <Link className="custom-link" to={'/'}>
+                                 <div className='menu-item-dropdown'>
+                                    My learning
+                                 </div>
+                              </Link>
+                              <button onClick={handleLogout} className='menu-item-dropdown btn-logout' >
+                                 Logout
+                              </button>
+                           </div></>
+                     )}
+
                   </div>
                </div>
             </div>
