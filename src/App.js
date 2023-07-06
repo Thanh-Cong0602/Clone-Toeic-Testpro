@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
+import RegisterPage from './Pages/RegisterPage/RegisterPage';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 
@@ -21,6 +22,9 @@ function App() {
             </Routes>
             <Routes >
                <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} />
+            </Routes>
+            <Routes >
+               <Route path="/register" element={isLoggedIn ? <Navigate to="/" replace /> : <RegisterPage />} />
             </Routes>
             <Footer />
          </BrowserRouter>

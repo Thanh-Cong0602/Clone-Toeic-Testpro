@@ -1,0 +1,127 @@
+.loginPage {
+   max-width: 600px;
+   margin: 0 auto;
+
+   & .loginForm {
+      padding: 50px 0;
+
+      & .title {
+         font-weight: bold;
+         font-size: 30px;
+         color: black;
+         padding-bottom: 30px;
+         text-align: center;
+      }
+
+      & .input-item {
+         border: 1px solid #f1f3f5;
+         background: #fbfbfb;
+         border-radius: 10px;
+         padding: 10px;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 30px;
+
+         & input[type] {
+            border: none;
+            color: black;
+            outline: none;
+            background: #fbfbfb;
+            width: 500px;
+            box-sizing: border-box;
+         }
+      }
+
+      & .choose-item {
+         text-align: left;
+         display: flex;
+         gap: 3rem;
+         padding-left: 5px;
+         margin-bottom: 20px;
+         label {
+            padding-left: 10px;
+         }
+      }
+
+      & .dateofBirth {
+         text-align: left;
+         margin-bottom: 20px;
+         input {
+            border-radius: 5px;
+            margin-left: 10px;
+         }
+      }
+
+      & .forgotPass {
+         color: #5d87f1;
+         font-size: 18px;
+         font-weight: 600;
+         
+      }
+
+      .login-btn-wrapper {
+         display: flex;
+         justify-content: center;
+         margin-top: 30px;
+
+         & .login-btn {
+            background: #656ef1;
+            border-radius: 20px;
+            border: none;
+            padding: 7px 40px;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+         }
+      }
+
+
+      & .or-login-with {
+         margin: 30px 0;
+         display: flex;
+         justify-content: space-between;
+         gap: 5px;
+         position: relative;
+
+         & .line {
+            border-bottom: 1px solid black;
+            width: 200px;
+            padding: 2px 0;
+            top: -15px;
+            position: relative;
+         }
+
+         span {
+            color: #898989;
+            font-size: 18px;
+            font-weight: 400;
+         }
+      }
+
+      & .login-with-gg {
+         margin: 0 auto;
+         width: 40%;
+         border-radius: 5px;
+         border: 1px solid #999;
+         padding: 10px;
+         text-align: center;
+      }
+
+      & .register {
+         text-align: center;
+         margin-top: 20px;
+
+         span {
+            color: rgb(80, 125, 212);
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.no-underline {
+   text-decoration: none;
+}
