@@ -28,7 +28,6 @@ function RegisterPage() {
 
    function handleSubmit(e) {
       e.preventDefault();
-      console.log(user)
       if (user.confirmPassword !== user.password) {
          const messageError = "Password and Confirm password don't match"
          toast.error(messageError, { autoClose: 1000 })
