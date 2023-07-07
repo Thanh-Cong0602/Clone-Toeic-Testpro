@@ -1,0 +1,110 @@
+{
+   "listItems": [
+      {
+         "id": 1,
+         "title": "Contracts"
+      },
+      {
+         "id": 2,
+         "title": "Marketing"
+      },
+      {
+         "id": 3,
+         "title": "Warranties"
+      },
+      {
+         "id": 4,
+         "title": "Business Planing"
+      },
+      {
+         "id": 5,
+         "title": "Conferences"
+      },
+      {
+         "id": 6,
+         "title": "Computers"
+      },
+      {
+         "id": 7,
+         "title": "Office Procedures"
+      },
+      {
+         "id": 8,
+         "title": "Job Advertising and Recruiting"
+      },
+      {
+         "id": 9,
+         "title": "Applying and interviewing"
+      },
+      {
+         "id": 10,
+         "title": "Hiring and Training"
+      },
+      {
+         "id": 11,
+         "title": "Salaries and Benefits"
+      },
+      {
+         "id": 12,
+         "title": "Promotions, Pensions, and Awards"
+      },
+      {
+         "id": 13,
+         "title": "Shipping"
+      },
+      {
+         "id": 14,
+         "title": "Inventory"
+      },
+      {
+         "id": 15,
+         "title": "Banking"
+      },
+      {
+         "id": 16,
+         "title": "Accounting"
+      },
+      {
+         "id": 17,
+         "title": "Investment"
+      },
+      {
+         "id": 18,
+         "title": "Taxes"
+      },
+      {
+         "id": 19,
+         "title": "Financial Statements"
+      },
+      {
+         "id": 20,
+         "title": "Property and Departments"
+      }
+   ],
+   "practices": [
+      {
+         "id": 1,
+         "title": "Photos"
+      },
+      {
+         "id": 2,
+         "title": "Question - Response"
+      },
+      {
+         "id": 3,
+         "title": "Short Conversations"
+      },
+      {
+         "id": 4,
+         "title": "Short Talks"
+      },
+      {
+         "id": 5,
+         "title": "Incomplete Sentences"
+      },
+      {
+         "id": 6,
+         "title": "Text Completion"
+      }
+   ]
+}

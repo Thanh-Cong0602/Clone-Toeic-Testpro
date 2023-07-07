@@ -6,9 +6,9 @@ import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
+import VocabularyPage from './Pages/VocabularyPage/VocabularyPage';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-
 function App() {
    const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
    return (
@@ -21,6 +21,9 @@ function App() {
             </Routes>
             <Routes >
                <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <LoginPage />} />
+            </Routes>
+            <Routes>
+               <Route path="/vocabulary" element={<VocabularyPage />}></Route>
             </Routes>
             <Footer />
          </BrowserRouter>

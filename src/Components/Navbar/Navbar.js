@@ -125,7 +125,7 @@ function Navbar() {
                   </div>
 
                   <div className='menu-item-wrap'>
-                     <Link className="custom-link" to={'/'}>
+                     <Link className="custom-link" to={'/vocabulary'}>
                         <div className='menu-item-title'>
                            <span>Vocabulary</span>
                         </div>
