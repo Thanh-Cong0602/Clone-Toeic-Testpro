@@ -43,6 +43,7 @@ function RegisterPage() {
          toast.warn(messageWarn, { autoClose: 1000 })
       }
       else {
+         console.log(user)
          registerAPI('accounts/register', user).then((res) => {
             toast.success(res.data.message, { autoClose: 1000 })
             navigate('/login')
