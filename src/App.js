@@ -9,6 +9,8 @@ import LoginPage from './Pages/LoginPage/LoginPage';
 import VocabularyPage from './Pages/VocabularyPage/VocabularyPage';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+
 function App() {
    const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
    return (
@@ -27,6 +29,8 @@ function App() {
             </Routes>
             <Footer />
          </BrowserRouter>
+         <ToastContainer className="toast-position"
+        position="top-center"></ToastContainer>
       </div>
    );
 }

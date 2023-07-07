@@ -1,4 +1,6 @@
+import { localhost } from "./localhost"
+
 const API_BASE = {
-   apiUrl: "http://localhost:8080/api/v1",
+   apiUrl: `${localhost}/api/v1`,
 }
 export default API_BASE

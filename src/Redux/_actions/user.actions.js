@@ -6,7 +6,7 @@ export const userActions = {
 }
 
 function login(data) {
-   localStorage.setItem('user', JSON.stringify(data.data.token));
+   localStorage.setItem('user', JSON.stringify(data.data.accessToken));
    return (dispatch) => {
       dispatch(success(data))
    }
