@@ -17,13 +17,17 @@ function RegisterPage() {
          dateOfBirth: '',
          address: '',
          phone: '',
-         age: ''
+         age: 0
       }
    );
+   const [hasEnteredAge, setHasEnteredAge] = useState(false);
    const navigate = useNavigate();
    function handleChange(e) {
       const { name, value } = e.target;
-      setUser(user => ({ ...user, [name]: value }));
+      setUser(user => ({ ...user, [name]: name == 'age' ? parseInt(value) : value }));
+      if (name === 'age') {
+         setHasEnteredAge(true);
+      }
    }
 
    function handleSubmit(e) {
@@ -160,7 +164,7 @@ function RegisterPage() {
                </div>
                <div className='text'>
                   <input type='number' placeholder='Enter your age'
-                     name='age' value={user.age} onChange={handleChange} />
+                     name='age' value={hasEnteredAge ? user.age : ''} onChange={handleChange} />
                </div>
             </div>
 
