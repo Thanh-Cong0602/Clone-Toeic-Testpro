@@ -1,0 +1,53 @@
+.main-study-view {
+   padding: 0 24px;
+   background: #E7ECF9;
+
+   & .main-study-flex {
+      display: flex;
+      margin-top: 20px;
+   }
+
+   & .study-layout-left {
+      width: 335px;
+
+      & .title {
+         text-align: center;
+         font-weight: 600;
+         font-size: 30px;
+         line-height: 45px;
+         color: #1d1d1d;
+         padding: 0 10px 45px;
+         margin-left: 10px
+      }
+   }
+
+   & .study-layout-right {
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative;
+      flex: 1;
+
+      & .flash-card-overview {
+         position: relative;
+         background: #fff;
+         padding: 40px 10px;
+         border-radius: 15px;
+         margin-top: 75px;
+         margin-bottom: 90px;
+
+         & .overview-all-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            & .overview-item {
+               padding: 10px;
+               border-radius: 15px;
+               height: 100%;
+               margin: 0 12.5px;
+               background-color: #f4f5fc;
+               width: 150px;
+            }
+         }
+      }
+   }
+}

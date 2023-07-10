@@ -39,7 +39,7 @@ function VocabularyPage() {
                            {
                               data.slice(0, 9).map(item => (
                                  <div key={item.id}>
-                                    <Link to={"/"} className='link-item'>
+                                    <Link to={item.link} className='link-item'>
                                        <div className='item'>
                                           <div className='item-left'>
                                              <BookHalf />

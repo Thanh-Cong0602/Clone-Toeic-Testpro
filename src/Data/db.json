@@ -2,7 +2,8 @@
    "listItems": [
       {
          "id": 1,
-         "title": "Contracts"
+         "title": "Contracts",
+         "link": "/vocabularybytopic"
       },
       {
          "id": 2,

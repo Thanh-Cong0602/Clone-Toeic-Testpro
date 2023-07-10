@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import VocabularyPage from './Pages/VocabularyPage/VocabularyPage';
+import VocabularyByTopicPage from './Pages/VocabularyPage/VocabularyByTopicPage/VocabularyByTopicPage';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -26,6 +27,9 @@ function App() {
             </Routes>
             <Routes>
                <Route path="/vocabulary" element={<VocabularyPage />}></Route>
+            </Routes>
+            <Routes>
+               <Route path="/vocabularybytopic" element={<VocabularyByTopicPage />}></Route>
             </Routes>
             <Footer />
          </BrowserRouter>
