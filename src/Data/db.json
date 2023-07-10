@@ -3,7 +3,69 @@
       {
          "id": 1,
          "title": "Contracts",
-         "link": "/vocabularybytopic"
+         "link": "/vocabularybytopic",
+         "vocabulary": [
+            {
+               "id": 1,
+               "lexical": "Establish",
+               "vowel": "/I'stæblIʃ/",
+               "meaning": "Thành lập"
+            },
+            {
+               "id": 2,
+               "lexical": "Agreement",
+               "vowel": "/ə'gri:mənt//",
+               "meaning": "Hợp đồng"
+            },
+            {
+               "id": 3,
+               "lexical": "Abide By",
+               "vowel": "/ə'baid/",
+               "meaning": "Tuân thủ"
+            },
+            {
+               "id": 4,
+               "lexical": "Determine",
+               "vowel": "/di;tɜ:rmin/",
+               "meaning": "Xác định"
+            },
+            {
+               "id": 5,
+               "lexical": "Assurance",
+               "vowel": "/ə'ʃʊrəns/",
+               "meaning": "Đảm bảo"
+            },
+            {
+               "id": 6,
+               "lexical": "Provision",
+               "vowel": "/prə'viʒn/",
+               "meaning": "Sự cung cấp"
+            },
+            {
+               "id": 7,
+               "lexical": "Resolve",
+               "vowel": "/ri'zɔ:lv/",
+               "meaning": "Giải quyết"
+            },
+            {
+               "id": 8,
+               "lexical": "Party",
+               "vowel": "/'pa:rti/",
+               "meaning": "Đối tác"
+            },
+            {
+               "id": 9,
+               "lexical": "Obligate",
+               "vowel": "/'a:bligeit/",
+               "meaning": "Tuân thủ"
+            },
+            {
+               "id": 10,
+               "lexical": "Cancellation",
+               "vowel": "/ˌkænsəˈleɪʃn/",
+               "meaning": "Sự hủy bỏ"
+            }
+         ]
       },
       {
          "id": 2,

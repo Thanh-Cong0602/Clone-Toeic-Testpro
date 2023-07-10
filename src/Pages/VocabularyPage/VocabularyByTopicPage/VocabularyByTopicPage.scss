@@ -3,12 +3,12 @@
    background: #E7ECF9;
 
    & .main-study-flex {
-      display: flex;
+      display: grid;
+      grid-template-columns: 335px auto;
       margin-top: 20px;
    }
 
    & .study-layout-left {
-      width: 335px;
 
       & .title {
          text-align: center;
@@ -25,7 +25,6 @@
       margin-left: 10px;
       margin-right: 10px;
       position: relative;
-      flex: 1;
 
       & .flash-card-overview {
          position: relative;
@@ -36,18 +35,27 @@
          margin-bottom: 90px;
 
          & .overview-all-items {
-            display: flex;
-            justify-content: space-between;
-            align-items: center; 
-            & .overview-item {
-               padding: 10px;
-               border-radius: 15px;
-               height: 100%;
-               margin: 0 12.5px;
-               background-color: #f4f5fc;
-               width: 150px;
+               display: grid;
+               grid-template-columns: repeat(5, 1fr);
+               grid-auto-flow: dense;
+               row-gap: 20px;
+               & .overview-item {
+                  padding: 10px;
+                  border-radius: 15px;
+                  height: 100%;
+                  margin: 0 12.5px;
+                  background-color: #f4f5fc;
+                  width: 150px;
+
+                  span {
+                     display: block;
+                  }
+               }
             }
-         }
       }
    }
+}
+
+.link-item {
+   text-decoration: none;
 }
