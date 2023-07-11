@@ -1,4 +1,86 @@
 {
+   "questionsforTopic": [
+      {
+         "id": 1,
+         "question": "to hire; to involve someone or something",
+         "answerA": "cancellation",
+         "answerB": "engage",
+         "answerC": "assurance",
+         "answerD": "resolve"
+      },
+      {
+         "id": 2,
+         "question": "to deal with successfully; to declare",
+         "answerA": "assurance",
+         "answerB": "resolve",
+         "answerC": "obligate",
+         "answerD": "agreement"
+      },
+      {
+         "id": 3,
+         "question": "a guarantee; confidence",
+         "answerA": "assurance",
+         "answerB": "determin",
+         "answerC": "provision",
+         "answerD": "party"
+      },
+      {
+         "id": 4,
+         "question": "to bind legally or morally",
+         "answerA": "cancellation",
+         "answerB": "resolve",
+         "answerC": "obligate",
+         "answerD": "party"
+      },
+      {
+         "id": 5,
+         "question": "to comply with; to conform",
+         "answerA": "Determine",
+         "answerB": "abide by",
+         "answerC": "establish",
+         "answerD": "agreement"
+      },
+      {
+         "id": 6,
+         "question": "a person or group participating in an action or plan; the persons or sides concerned in a legal matter",
+         "answerA": "specific",
+         "answerB": "abide by",
+         "answerC": "obligate",
+         "answerD": "party"
+      },
+      {
+         "id": 7,
+         "question": "a measure taken beforehand; a stipulation",
+         "answerA": "determine",
+         "answerB": "provision",
+         "answerC": "establish",
+         "answerD": "assurance"
+      },
+      {
+         "id": 8,
+         "question": "to find out; to influence",
+         "answerA": "determine",
+         "answerB": "specific",
+         "answerC": "obligate",
+         "answerD": "assurance"
+      },
+      {
+         "id": 9,
+         "question": "annulment; stopping",
+         "answerA": "abide by",
+         "answerB": "resolve",
+         "answerC": "cancellation",
+         "answerD": "agreement"
+      },
+      {
+         "id": 10,
+         "question": "to institute permanently; to bring about",
+         "answerA": "obligate",
+         "answerB": "establish",
+         "answerC": "obligate",
+         "answerD": "determine"
+      }
+   ],
    "listItems": [
       {
          "id": 1,

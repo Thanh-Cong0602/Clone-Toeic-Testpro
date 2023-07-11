@@ -1,23 +1,23 @@
-.vocabulary {
+.vocabulary-categories {
   max-width: 1170px;
   padding: 0 24px;
   margin: 0 auto;
   background: #fff;
 }
-.vocabulary .title {
+.vocabulary-categories .title {
   text-align: center;
   font-weight: 500;
   font-size: 30px;
   color: #1d1d1d;
   padding: 30px 0;
 }
-.vocabulary .container .main-list-view {
+.vocabulary-categories .container .main-list-view {
   background: hsla(0, 0%, 100%, 0.6);
   border-radius: 15px;
   padding: 20px;
   margin-top: 12px;
 }
-.vocabulary .container .main-list-view .item {
+.vocabulary-categories .container .main-list-view .item {
   height: 50px;
   background-color: aqua;
   border-radius: 7px;
@@ -29,22 +29,22 @@
   padding-right: 10px;
   cursor: pointer;
 }
-.vocabulary .container .main-list-view .item .item-left {
+.vocabulary-categories .container .main-list-view .item .item-left {
   display: flex;
   align-items: center;
 }
-.vocabulary .container .main-list-view .item .item-left .text {
+.vocabulary-categories .container .main-list-view .item .item-left .text {
   color: #4a4a4a;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   padding-left: 15px;
 }
-.vocabulary .container .right-list {
+.vocabulary-categories .container .right-list {
   padding: 20px;
   margin-top: 12px;
 }
-.vocabulary .container .right-list .item {
+.vocabulary-categories .container .right-list .item {
   background: aqua;
   border-radius: 15px;
   min-height: 55px;
@@ -58,4 +58,4 @@
 .link-item {
   text-decoration: none;
   color: black;
-}/*# sourceMappingURL=VocabularyPage.css.map */
+}/*# sourceMappingURL=VocabularyCategories.css.map */

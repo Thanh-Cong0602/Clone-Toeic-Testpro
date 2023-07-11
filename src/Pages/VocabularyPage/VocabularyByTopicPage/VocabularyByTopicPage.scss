@@ -31,27 +31,161 @@
          background: #fff;
          padding: 40px 10px;
          border-radius: 15px;
-         margin-top: 75px;
+         margin-top: 100px;
          margin-bottom: 90px;
 
          & .overview-all-items {
-               display: grid;
-               grid-template-columns: repeat(5, 1fr);
-               grid-auto-flow: dense;
-               row-gap: 20px;
-               & .overview-item {
-                  padding: 10px;
-                  border-radius: 15px;
-                  height: 100%;
-                  margin: 0 12.5px;
-                  background-color: #f4f5fc;
-                  width: 150px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-flow: dense;
+            row-gap: 20px;
+            margin-top: 20px;
 
-                  span {
-                     display: block;
+            & .overview-item {
+               padding: 10px;
+               border-radius: 15px;
+               height: 100%;
+               margin: 0 12.5px;
+               background-color: #f4f5fc;
+               box-shadow: 1px 3px 5px #999;
+
+               span {
+                  display: block;
+               }
+
+               & .lexical {
+                  color: #007aff;
+                  font-weight: 500;
+                  font-size: 14px;
+               }
+
+               & .vowel {
+                  color: #999;
+               }
+            }
+         }
+
+         & .btn-playGame {
+            border-radius: 10px;
+            color: #fff !important;
+            background: #007aff;
+            text-decoration: none;
+            border-radius: 50px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            width: 180px;
+            font-weight: 700;
+            margin: 0 15px;
+            border: none;
+            margin-top: 20px;
+         }
+
+         & .btn-questions-all {
+            display: grid;
+            grid-template-columns: auto 100px;
+            gap: 30px;
+            height: 80px;
+            align-items: center;
+
+            & .question-layout-left {
+               display: flex;
+               gap: 30px;
+               justify-content: center;
+
+               & .question-item {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  height: 45px;
+                  width: 45px;
+                  background: #999;
+                  cursor: pointer;
+
+                  & .question-item-id {
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     color: black;
+                     font-weight: bold;
+                     font-size: 20px;
+
                   }
                }
             }
+
+            & .question-layout-right {
+               & .btn-exits {
+                  border-radius: 50%;
+                  height: 45px;
+                  width: 45px;
+                  background: red;
+                  position: relative;
+                  border: none;
+                  top: -20px;
+
+                  & .icons {
+                     position: relative;
+                     font-weight: 700;
+                     color: black;
+                     font-size: 30px;
+                  }
+               }
+            }
+         }
+
+         & .show-Question {
+            text-align: left;
+            padding: 40px;
+
+            & .question {
+               font-weight: bold;
+            }
+
+            & .answer {
+               margin-top: 10px;
+               display: flex;
+               gap: 5px;
+            }
+         }
+
+         & .btn-review {
+            padding: 20px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .btn-prev {
+               border: none;
+               border-radius: 20px;
+               padding: 10px 30px;
+               background: #007aff;
+               color: white;
+               font-weight: bold;
+            }
+
+            & .disable {
+               color: #999;
+            }
+
+            & .btn-next {
+               border: none;
+               border-radius: 20px;
+               padding: 10px 30px;
+               background: #007aff;
+               color: white;
+               font-weight: bold;
+            }
+
+            & .btn-submit {
+               border: none;
+               border-radius: 20px;
+               padding: 10px 30px;
+               background: #999;
+               color: black;
+               font-weight: bold;
+            }
+         }
       }
    }
 }
