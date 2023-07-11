@@ -1,0 +1,192 @@
+{
+   "listItems": [
+      {
+         "id": 1,
+         "title": "Contracts",
+         "link": "/vocabularybytopic",
+         "vocabulary": [
+            {
+               "id": 1,
+               "lexical": "Establish",
+               "vowel": "/I'stæblIʃ/",
+               "meaning": "Thành lập"
+            },
+            {
+               "id": 2,
+               "lexical": "Agreement",
+               "vowel": "/ə'gri:mənt//",
+               "meaning": "Hợp đồng"
+            },
+            {
+               "id": 3,
+               "lexical": "Abide By",
+               "vowel": "/ə'baid/",
+               "meaning": "Tuân thủ"
+            },
+            {
+               "id": 4,
+               "lexical": "Determine",
+               "vowel": "/di;tɜ:rmin/",
+               "meaning": "Xác định"
+            },
+            {
+               "id": 5,
+               "lexical": "Assurance",
+               "vowel": "/ə'ʃʊrəns/",
+               "meaning": "Đảm bảo"
+            },
+            {
+               "id": 6,
+               "lexical": "Provision",
+               "vowel": "/prə'viʒn/",
+               "meaning": "Sự cung cấp"
+            },
+            {
+               "id": 7,
+               "lexical": "Resolve",
+               "vowel": "/ri'zɔ:lv/",
+               "meaning": "Giải quyết"
+            },
+            {
+               "id": 8,
+               "lexical": "Party",
+               "vowel": "/'pa:rti/",
+               "meaning": "Đối tác"
+            },
+            {
+               "id": 9,
+               "lexical": "Obligate",
+               "vowel": "/'a:bligeit/",
+               "meaning": "Tuân thủ"
+            },
+            {
+               "id": 10,
+               "lexical": "Cancellation",
+               "vowel": "/ˌkænsəˈleɪʃn/",
+               "meaning": "Sự hủy bỏ"
+            }
+         ]
+      },
+      {
+         "id": 2,
+         "title": "Marketing",
+         "link": "/"
+      },
+      {
+         "id": 3,
+         "title": "Warranties",
+         "link": "/"
+      },
+      {
+         "id": 4,
+         "title": "Business Planing",
+         "link": "/"
+      },
+      {
+         "id": 5,
+         "title": "Conferences",
+         "link": "/"
+      },
+      {
+         "id": 6,
+         "title": "Computers",
+         "link": "/"
+      },
+      {
+         "id": 7,
+         "title": "Office Procedures",
+         "link": "/"
+      },
+      {
+         "id": 8,
+         "title": "Job Advertising and Recruiting",
+         "link": "/"
+      },
+      {
+         "id": 9,
+         "title": "Applying and interviewing",
+         "link": "/"
+      },
+      {
+         "id": 10,
+         "title": "Hiring and Training",
+         "link": "/"
+      },
+      {
+         "id": 11,
+         "title": "Salaries and Benefits",
+         "link": "/"
+      },
+      {
+         "id": 12,
+         "title": "Promotions, Pensions, and Awards",
+         "link": "/"
+      },
+      {
+         "id": 13,
+         "title": "Shipping",
+         "link": "/"
+      },
+      {
+         "id": 14,
+         "title": "Inventory",
+         "link": "/"
+      },
+      {
+         "id": 15,
+         "title": "Banking",
+         "link": "/"
+      },
+      {
+         "id": 16,
+         "title": "Accounting",
+         "link": "/"
+      },
+      {
+         "id": 17,
+         "title": "Investment",
+         "link": "/"
+      },
+      {
+         "id": 18,
+         "title": "Taxes",
+         "link": "/"
+      },
+      {
+         "id": 19,
+         "title": "Financial Statements",
+         "link": "/"
+      },
+      {
+         "id": 20,
+         "title": "Property and Departments",
+         "link": "/"
+      }
+   ],
+   "practices": [
+      {
+         "id": 1,
+         "title": "Photos"
+      },
+      {
+         "id": 2,
+         "title": "Question - Response"
+      },
+      {
+         "id": 3,
+         "title": "Short Conversations"
+      },
+      {
+         "id": 4,
+         "title": "Short Talks"
+      },
+      {
+         "id": 5,
+         "title": "Incomplete Sentences"
+      },
+      {
+         "id": 6,
+         "title": "Text Completion"
+      }
+   ]
+}

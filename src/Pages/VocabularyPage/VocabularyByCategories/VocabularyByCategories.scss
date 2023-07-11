@@ -1,0 +1,68 @@
+.vocabulary-categories {
+   max-width: 1170px;
+   padding: 0 24px;
+   margin: 0 auto;
+   background: #fff;
+
+   & .title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 30px;
+      color: #1d1d1d;
+      padding: 30px 0;
+   }
+
+   & .container {
+      & .main-list-view {
+         background: hsla(0, 0%, 100%, .6);
+         border-radius: 15px;
+         padding: 20px;
+         margin-top: 12px;
+         & .item {
+            height: 50px;
+            background-color: aqua;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+
+            & .item-left {
+               display: flex;
+               align-items: center;
+
+               & .text {
+                  color: #4a4a4a;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 21px;
+                  padding-left: 15px; 
+               }
+            }
+         }
+      }
+
+      & .right-list {
+         padding: 20px;
+         margin-top: 12px;
+         & .item {
+            background: aqua;
+            border-radius: 15px;
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
+
+.link-item {
+   text-decoration: none;
+   color: black;
+}
