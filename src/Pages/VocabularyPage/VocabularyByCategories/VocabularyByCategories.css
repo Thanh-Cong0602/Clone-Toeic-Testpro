@@ -19,7 +19,8 @@
 }
 .vocabulary-categories .container .main-list-view .item {
   height: 50px;
-  background-color: aqua;
+  background-color: #f4f5fc;
+  box-shadow: 1px 3px 5px #999;
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -45,7 +46,8 @@
   margin-top: 12px;
 }
 .vocabulary-categories .container .right-list .item {
-  background: aqua;
+  background-color: #f4f5fc;
+  box-shadow: 1px 3px 5px #999;
   border-radius: 15px;
   min-height: 55px;
   display: flex;
