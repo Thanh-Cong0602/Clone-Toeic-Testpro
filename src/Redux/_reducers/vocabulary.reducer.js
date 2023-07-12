@@ -1,7 +1,8 @@
 import { vocabularyConstants } from "../_constants";
 
 const initialState = {
-   getAllAnswer: []
+   getAllAnswer: [],
+   currentCategoryIndex: 0
 }
 
 export function vocabulary(state = initialState, action) {
@@ -9,7 +10,12 @@ export function vocabulary(state = initialState, action) {
       case vocabularyConstants.COMPLETED_ANSWER:
          return {
             ...state,
-            getAllAnswer : action.data
+            getAllAnswer : action.payload
+         }
+      case vocabularyConstants.SET_CURRENT_CATEGORY_INDEX:
+         return {
+            ...state,
+            currentCategoryIndex: action.payload
          }
       default:
          return state

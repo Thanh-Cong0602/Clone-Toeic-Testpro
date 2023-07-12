@@ -5,9 +5,17 @@ import { Link } from 'react-router-dom';
 import { BookHalf, ArrowRight } from 'react-bootstrap-icons';
 import { getVocabularyCategories } from '../../../Api/Service/vocabulary.service';
 import { getVocabularyPractices } from '../../../Api/Service/vocabulary.service';
+import { useDispatch } from 'react-redux';
+import { vocabularyActions } from '../../../Redux/_actions';
+import { useSelector } from 'react-redux';
 function VocabularyCategories() {
+   const listofAnswers = useSelector( state => state.vocabulary.getAllAnswer)
+   console.log("Answer from user with topic Contracts")
+   console.log(listofAnswers)
    const [categories, setCategories] = useState([]);
    const [practices, setPractices] = useState([]);
+   const dispatch = useDispatch()
+
    useEffect(() => {
       getVocabularyCategories('listItems').then((res) => {
          setCategories(res.data)
@@ -21,6 +29,11 @@ function VocabularyCategories() {
       })
    }, [])
 
+   
+   const handleCategoryClick = (categoryIndex) => {
+      dispatch(vocabularyActions.setCurrentCategoryIndex(categoryIndex));
+   };
+   
    return (
       <div className='vocabulary-categories'>
          <div className='title'>
@@ -36,9 +49,10 @@ function VocabularyCategories() {
                      <div class="row">
                         <div class="col">
                            {
-                              categories.slice(0, 9).map(item => (
-                                 <div key={item.id}>
-                                    <Link to={item.link} className='link-item'>
+                              categories.slice(0, 9).map((item, index) => (
+                                 <div key={item.id} >
+                                    <Link to={item.link} className='link-item'
+                                    onClick={() => handleCategoryClick(index)}>
                                        <div className='item'>
                                           <div className='item-left'>
                                              <BookHalf />

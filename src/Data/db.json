@@ -151,11 +151,137 @@
       },
       {
          "id": 2,
-         "title": "Marketing"
+         "title": "Marketing",
+         "link": "/vocabularybytopic",
+         "vocabulary": [
+            {
+               "id": 1,
+               "lexical": "Attract",
+               "vowel": "/əˈtrækt/",
+               "meaning": "Thu hút"
+            },
+            {
+               "id": 2,
+               "lexical": "Compare",
+               "vowel": "/kəmˈper/",
+               "meaning": "So sánh"
+            },
+            {
+               "id": 3,
+               "lexical": "Competition",
+               "vowel": "/ˌkɑːmpəˈtɪʃn/",
+               "meaning": "Sự cạnh tranh"
+            },
+            {
+               "id": 4,
+               "lexical": "Consume",
+               "vowel": "/kənˈsuːm/",
+               "meaning": "Tiêu thụ"
+            },
+            {
+               "id": 5,
+               "lexical": "Convince",
+               "vowel": "/kənˈvɪns/",
+               "meaning": "Thuyết phục"
+            },
+            {
+               "id": 6,
+               "lexical": "Currently",
+               "vowel": "/ˈkɜːrəntli/",
+               "meaning": "Hiện tại"
+            },
+            {
+               "id": 7,
+               "lexical": "Inspiration",
+               "vowel": "/ˌɪnspəˈreɪʃn/",
+               "meaning": "Cảm hứng"
+            },
+            {
+               "id": 8,
+               "lexical": "Market",
+               "vowel": "/ˈmɑːrkɪt/",
+               "meaning": "Chợ"
+            },
+            {
+               "id": 9,
+               "lexical": "Persuasion",
+               "vowel": "/pərˈsweɪʒn/",
+               "meaning": "Thuyết phục"
+            },
+            {
+               "id": 10,
+               "lexical": "Poductive",
+               "vowel": "/prəˈdʌktɪv/",
+               "meaning": "Năng suất"
+            }
+         ]
       },
       {
          "id": 3,
-         "title": "Warranties"
+         "title": "Warranties",
+         "link": "/vocabularybytopic",
+         "vocabulary": [
+            {
+               "id": 1,
+               "lexical": "Characteristic",
+               "vowel": "/ˌkærəktəˈrɪstɪk/",
+               "meaning": "Đặc điểm"
+            },
+            {
+               "id": 2,
+               "lexical": "Consequence",
+               "vowel": "/ˈkɑːnsəkwens/",
+               "meaning": "Kết quả"
+            },
+            {
+               "id": 3,
+               "lexical": "Consider",
+               "vowel": "/kənˈsɪdər/",
+               "meaning": "Xem xét"
+            },
+            {
+               "id": 4,
+               "lexical": "Cover",
+               "vowel": "/ˈkʌvər/",
+               "meaning": "Bao phủ"
+            },
+            {
+               "id": 5,
+               "lexical": "Frequently",
+               "vowel": "/ˈfriːkwəntli/",
+               "meaning": "Thường xuyên"
+            },
+            {
+               "id": 6,
+               "lexical": "Expiration",
+               "vowel": "/ˌekspəˈreɪʃn/",
+               "meaning": "Hết hạn"
+            },
+            {
+               "id": 7,
+               "lexical": "Imply",
+               "vowel": "/ɪmˈplaɪ/",
+               "meaning": "Bao hàm"
+            },
+            {
+               "id": 8,
+               "lexical": "Promise",
+               "vowel": "/ˈprɑːmɪs/",
+               "meaning": "Hứa"
+            },
+            {
+               "id": 9,
+               "lexical": "Protect",
+               "vowel": "/prəˈtekt/",
+               "meaning": "Bảo vệ"
+            },
+            {
+               "id": 10,
+               "lexical": "Reputation",
+               "vowel": "/ˌrepjuˈteɪʃn/",
+               "meaning": "Nổi tiếng"
+            }
+         ]
       },
       {
          "id": 4,

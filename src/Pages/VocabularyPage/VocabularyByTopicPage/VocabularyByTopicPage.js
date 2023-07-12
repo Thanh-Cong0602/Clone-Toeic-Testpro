@@ -5,7 +5,7 @@ import { getQuestionsByTopic } from '../../../Api/Service/vocabulary.service';
 import { X } from 'react-bootstrap-icons';
 import { toast } from "react-toastify";
 import { vocabularyActions } from '../../../Redux/_actions';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function VocabularyByTopicPage() {
    const [vocabularyList, setVocabularyList] = useState([]);
@@ -16,10 +16,10 @@ function VocabularyByTopicPage() {
    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
    const [isLastQuestion, setIsLastQuestion] = useState(false);
    const dispatch = useDispatch()
-
+   const currentCategoryIndex = useSelector(state => state.vocabulary.currentCategoryIndex)
    useEffect(() => {
       getVocabularyByTopic('listItems').then((res => {
-         setVocabularyList(res.data[0].vocabulary)
+         setVocabularyList(res.data[currentCategoryIndex].vocabulary)
       })).catch((err) => {
          console.log(err)
       })
@@ -30,7 +30,7 @@ function VocabularyByTopicPage() {
          console.log(err)
       })
    }, [])
-
+  
    useEffect(() => {
       if (questions.length > 0) {
          setCurrentQuestion(questions[currentQuestionIndex])
