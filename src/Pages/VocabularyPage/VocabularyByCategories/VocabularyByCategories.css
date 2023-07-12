@@ -1,0 +1,63 @@
+.vocabulary-categories {
+  max-width: 1170px;
+  padding: 0 24px;
+  margin: 0 auto;
+  background: #fff;
+}
+.vocabulary-categories .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: #1d1d1d;
+  padding: 30px 0;
+}
+.vocabulary-categories .container .main-list-view {
+  background: hsla(0, 0%, 100%, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 12px;
+}
+.vocabulary-categories .container .main-list-view .item {
+  height: 50px;
+  background-color: #f4f5fc;
+  box-shadow: 1px 3px 5px #999;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.vocabulary-categories .container .main-list-view .item .item-left {
+  display: flex;
+  align-items: center;
+}
+.vocabulary-categories .container .main-list-view .item .item-left .text {
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 15px;
+}
+.vocabulary-categories .container .right-list {
+  padding: 20px;
+  margin-top: 12px;
+}
+.vocabulary-categories .container .right-list .item {
+  background-color: #f4f5fc;
+  box-shadow: 1px 3px 5px #999;
+  border-radius: 15px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
+
+.link-item {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=VocabularyByCategories.css.map */

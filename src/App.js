@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import RegisterPage from './Pages/RegisterPage/RegisterPage';
+import VocabularyPage from './Pages/VocabularyPage/VocabularyPage';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -26,6 +27,9 @@ function App() {
             </Routes>
             <Routes >
                <Route path="/register" element={isLoggedIn ? <Navigate to="/" replace /> : <RegisterPage />} />
+            </Routes>
+            <Routes>
+               <Route path="/vocabulary" element={<VocabularyPage />}></Route>
             </Routes>
             <Footer />
          </BrowserRouter>
