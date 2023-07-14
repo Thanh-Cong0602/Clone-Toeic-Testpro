@@ -30,6 +30,9 @@
   width: 500px;
   box-sizing: border-box;
 }
+.loginPage .loginForm .error-message {
+  color: red;
+}
 .loginPage .loginForm .choose-item {
   text-align: left;
   display: flex;
